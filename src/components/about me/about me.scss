@@ -1,0 +1,139 @@
+@import "../../app.scss";
+
+.aboutme{
+
+    height: calc(100vh - 5px);
+    overflow: hidden;
+    display: flex;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+
+    gap: 50px;
+    // flex-direction: column;
+
+    @include mobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+
+    .textContainer{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:25px;
+        margin-left:20px;
+        flex: 1;
+        // text-align: center;
+        
+        @include mobile{
+            // width: 80%;
+            // margin-left: 30px;
+            // justify-content: flex-start;
+            // gap: 20px;
+            // padding-top: 20%;
+            width: 100%;
+            gap:20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+
+            
+            
+        }
+
+        h1{
+            font-size: 50px;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-right: 10%;
+            font-family: 'Montserrat', cursive;
+            
+
+            @include mobile{
+                font-size: 40px;
+                // padding-left: 100px;
+            
+
+            }
+            
+        }
+
+        p{
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 12px;
+            max-width:60%;
+            margin-left: 120px;
+            text-align: center;
+
+            @include mobile{
+                margin-left: -35px;
+                max-width: 90%;
+            }
+
+            
+           
+        }
+    }
+
+    .imageContainer{
+        height: 100%;
+        display: grid; 
+        position: relative;
+        top: 12%;
+        flex: 1;
+        right: 17%;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 230px);
+        gap: 10px;
+        
+        margin: auto;
+
+        @include mobile{
+            grid-template-rows: repeat(3, 180px);
+            top: 0;
+            padding-left: 9%;
+            width: 90%;
+            row-gap: 0;
+
+            
+           
+        }
+        
+        img{
+            object-fit: cover;
+            height: 200px;
+            width: 300px;
+            margin-left: 50%;
+            border: 2px solid gray; 
+            box-sizing: border-box;
+            border-radius: 5px;
+            transition: transform 0.3s;
+
+            @include mobile{
+                width: 100%;
+                height: 40%;
+                
+            }
+            
+        }
+
+
+        img:hover {
+            transform: scale(2);
+          
+        }
+
+    
+
+    }   
+
+
+
+}
