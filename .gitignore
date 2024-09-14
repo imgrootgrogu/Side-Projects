@@ -1,0 +1,6 @@
+.env
+wandb
+test-image.hdf5
+test-metadata.csv
+train-image.hdf5
+train-metadata.csv
