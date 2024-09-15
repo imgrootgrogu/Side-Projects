@@ -1,0 +1,25 @@
+# Python virtual environments
+env/
+venv/
+*.pyc
+__pycache__/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables and credentials
+.env
+
+# PyCharm, VSCode, Jupyter files (optional)
+.idea/
+.vscode/
+*.ipynb_checkpoints/
+
+# Docker
+*.log
+docker-compose.yml
+
+annabel/pyvenv.cfg
+.dockerignore
+
